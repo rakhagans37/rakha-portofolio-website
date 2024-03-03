@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="../src/output.css" />
+    </head>
+    <body class="bg-background font-sans">
+        <div>
+            <img src="../src/img/blueBlur.svg" class="absolute top-0 right-0" />
+        </div>
+
+        <!-- Navbar -->
+        <nav
+            class="px-32 pt-10 flex flex-row justify-between items-center w-full relative"
+        >
+            <h1 class="text-secondaryText font-bold text-3xl">RAKHA</h1>
+
+            <ul class="text-white flex flex-row gap-10 text-lg font-medium">
+                <li>Services</li>
+                <li>Portofolio</li>
+                <li>Contact</li>
+                <li>About</li>
+            </ul>
+        </nav>
+
+        <!-- About Me -->
+        <div
+            class="mt-24 px-32 pt-10 w-full flex flex-row justify-between items-center relative"
+        >
+            <!-- Profile Photo -->
+            <div
+                class="w-[450px] absolute left-[600px] 2xl:w-[500px] 2xl:left-[700px] 2xl:mt-0"
+            >
+                <img src="../src/img/Profile.JPG" />
+            </div>
+
+            <!-- Information Detail -->
+            <div class="flex flex-col gap-9 w-1/2 relative">
+                <div class="flex flex-col gap-3">
+                    <h2 class="text-thirdText font-semibold text-3xl">
+                        Full-Stack Developer
+                    </h2>
+                    <h3 class="text-white font-semibold text-7xl top-1">
+                        Muhammad Rakha Nasjaya
+                    </h3>
+                </div>
+                <div class="w-[183px] h-2 bg-addtional"></div>
+                <div class="flex flex-col w-3/5 gap-14">
+                    <p class="text-thirdText break-words text-justify text-xl">
+                        I am a Full-Stack Developer with a passion for creating
+                        beautiful and functional websites. I have a strong
+                        foundation in web development and I am constantly
+                        learning new technologies and frameworks to improve my
+                        skills.
+                    </p>
+                    <a href="#" class="text-addtional text-xl font-normal"
+                        >Let's Talk -></a
+                    >
+                </div>
+            </div>
+
+            <!-- Experience -->
+            <div class="flex flex-col gap-28">
+                <div class="w-max flex flex-col gap-3">
+                    <h2 class="text-thirdText text-2xl">Years of Exprience</h2>
+                    <p
+                        class="text-white text-white text-7xl font-semibold"
+                        id="experience"
+                    ></p>
+                </div>
+                <div class="flex flex-col gap-3">
+                    <h2 class="text-thirdText text-2xl">Complete Project</h2>
+                    <p
+                        class="text-white text-white text-7xl font-semibold"
+                        id="project"
+                    ></p>
+                </div>
+                <div class="flex flex-col gap-3">
+                    <h2 class="text-thirdText text-2xl">Event Orginizer</h2>
+                    <p class="text-white text-7xl font-semibold" id="event"></p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Purple Blur Image -->
+        <div>
+            <img
+                src="../src/img/purpleBlur.svg"
+                class="absolute top-[620px] left-0-0"
+            />
+        </div>
+
+        <!-- Stack -->
+        <div
+            class="bg-backgroundSecondary bg-opacity-60 mt-28 2xl:mt-36 h-[200px] flex items-center justify-center relative"
+        >
+            <ul
+                class="grid grid-cols-6 gap-[115px] xl:gap-[140px] px-[150px] items-center justify-center"
+            >
+                <a href="#">
+                    <img
+                        src="../src/img/laravel-wordmark-1.svg"
+                        class="grayscale hover:grayscale-0 transition-all duration-300 ease-in-out"
+                        alt="Laravel"
+                        title="Laravel"
+                    />
+                </a>
+                <a href="#">
+                    <img
+                        src="../src/img/tailwindcss.svg"
+                        class="grayscale hover:grayscale-0 transition-all duration-300 ease-in-out"
+                        alt="Tailwind CSS"
+                        title="Tailwind CSS"
+                    />
+                </a>
+                <a href="#">
+                    <img
+                        src="../src/img/bootstrap-5.svg"
+                        alt=""
+                        class="grayscale hover:grayscale-0 transition-all duration-300 ease-in-out"
+                        title="Bootstrap 5"
+                    />
+                </a>
+                <a href="#">
+                    <img
+                        src="../src/img/mysql-logo.svg"
+                        alt="MySQL"
+                        class="grayscale hover:grayscale-0 transition-all duration-300 ease-in-out"
+                        title="MySQL"
+                    />
+                </a>
+                <a href="#">
+                    <img
+                        src="../src/img/react-2.svg"
+                        alt="React JS"
+                        class="grayscale hover:grayscale-0 transition-all duration-30 ease-in-out"
+                        title="React JS"
+                    />
+                </a href="#">
+                <a href="#">
+                    <img
+                        src="../src/img/github-icon-1.svg"
+                        alt="GitHub"
+                        class="grayscale hover:grayscale-0 transition-all duration-300 ease-in-out"
+                        title="GitHub"
+                    />
+                </a>
+            </ul>
+        </div>
+
+        <!-- Portofolio -->
+        <div
+            class="mt-36 mx-32 bg-backgroundSecondary bg-opacity-60 overflow-hidden rounded-lg relative"
+        >
+            <div class="flex flex-col justify-between px-10 py-10">
+                <div class="flex flex-row justify-between items-center">
+                    <h2 class="text-white font-sans text-6xl font-semibold">
+                        My Portofolio
+                    </h2>
+                    <a href="#" class="text-addtional text-xl font-normal"
+                        >See All -></a
+                    >
+                </div>
+                <div class="grid grid-cols-3"></div>
+            </div>
+        </div>
+
+        <script src="../src/js/main.js" type="module"></script>
+    </body>
+</html>

@@ -1,0 +1,10 @@
+{
+  "devDependencies": {
+    "tailwindcss": "^3.4.1"
+  },
+  "dependencies": {
+    "countup.js": "^2.8.0",
+    "odometer": "^0.4.8",
+    "odometer_countup": "^1.0.4"
+  }
+}

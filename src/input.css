@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#profilePhoto{
+    background: url('../src/img/Profile.JPG'), lightgray 50% / cover no-repeat;
+
+    ;
+}
