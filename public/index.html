@@ -7,13 +7,30 @@
         <link rel="stylesheet" href="../src/output.css" />
     </head>
     <body class="bg-background font-sans">
+        <!-- Blue Blur Image -->
         <div>
             <img src="../src/img/blueBlur.svg" class="absolute top-0 right-0" />
         </div>
 
+        <!-- Purple Blur Image -->
+        <div>
+            <img
+                src="../src/img/purpleBlur.svg"
+                class="absolute top-[620px] left-0"
+            />
+        </div>
+
+        <!-- Purple Blur Image -->
+        <div>
+            <img
+                src="../src/img/pinkBlur.svg"
+                class="absolute top-[1230px] right-0"
+            />
+        </div>
+
         <!-- Navbar -->
         <nav
-            class="px-32 pt-10 flex flex-row justify-between items-center w-full relative"
+            class="px-32 pt-10 flex flex-row justify-between items-center w-full relative top-0"
         >
             <h1 class="text-secondaryText font-bold text-3xl">RAKHA</h1>
 
@@ -29,15 +46,8 @@
         <div
             class="mt-24 px-32 pt-10 w-full flex flex-row justify-between items-center relative"
         >
-            <!-- Profile Photo -->
-            <div
-                class="w-[450px] absolute left-[600px] 2xl:w-[500px] 2xl:left-[700px] 2xl:mt-0"
-            >
-                <img src="../src/img/Profile.JPG" />
-            </div>
-
             <!-- Information Detail -->
-            <div class="flex flex-col gap-9 w-1/2 relative">
+            <div class="flex flex-col gap-9 w-1/2 relative z-10">
                 <div class="flex flex-col gap-3">
                     <h2 class="text-thirdText font-semibold text-3xl">
                         Full-Stack Developer
@@ -59,6 +69,13 @@
                         >Let's Talk -></a
                     >
                 </div>
+            </div>
+
+            <!-- Profile Photo -->
+            <div
+                class="w-[450px] relative right-36 2xl:w-[500px] 2xl:right-48 2xl:mt-0"
+            >
+                <img src="../src/img/Profile.JPG" />
             </div>
 
             <!-- Experience -->
@@ -84,20 +101,14 @@
             </div>
         </div>
 
-        <!-- Purple Blur Image -->
-        <div>
-            <img
-                src="../src/img/purpleBlur.svg"
-                class="absolute top-[620px] left-0-0"
-            />
-        </div>
+        
 
         <!-- Stack -->
         <div
-            class="bg-backgroundSecondary bg-opacity-60 mt-28 2xl:mt-36 h-[200px] flex items-center justify-center relative"
+            class="bg-backgroundSecondary bg-opacity-60 mt-28 2xl:mt-44 h-[200px] flex items-center justify-center relative"
         >
             <ul
-                class="grid grid-cols-6 gap-[115px] xl:gap-[140px] px-[150px] items-center justify-center"
+                class="grid grid-cols-6 gap-[115px] 2xl:gap-[200px] px-[150px] items-center justify-center"
             >
                 <a href="#">
                     <img
@@ -155,6 +166,7 @@
             class="mt-36 mx-32 bg-backgroundSecondary bg-opacity-60 overflow-hidden rounded-lg relative"
         >
             <div class="flex flex-col justify-between px-10 py-10">
+                <!-- Intro Portofolio -->
                 <div class="flex flex-row justify-between items-center">
                     <h2 class="text-white font-sans text-6xl font-semibold">
                         My Portofolio
@@ -163,7 +175,75 @@
                         >See All -></a
                     >
                 </div>
-                <div class="grid grid-cols-3"></div>
+
+                <!-- Detail Portofolio -->
+                <div class="grid grid-cols-3 mt-8 gap-5 gap-y-10">
+                    <!-- Portofolio 1 -->
+                    <div class="flex flex-col h-max bg-card bg-opacity-30 rounded-xl overflow-hidden">
+                        <div class="h-max">
+                            <img src="../src/img/Portofolio/nguliah.png" class="object-cover"  alt="">
+                        </div>
+                        <div class="flex flex-col gap-2 h-[114px] p-5 justify-center">
+                            <h3 class="text-white font-sans text-2xl font-medium"> Nguliah.id </h3>
+                            <p class="text-thirdText font-sans font-normal text-xl">Website</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Portofolio 2 -->
+                    <div class="flex flex-col h-max bg-card bg-opacity-30 rounded-xl overflow-hidden">
+                        <div class="h-max">
+                            <img src="../src/img/Portofolio/nguliah.png" class="object-cover"  alt="">
+                        </div>
+                        <div class="flex flex-col gap-2 h-[114px] p-5 justify-center">
+                            <h3 class="text-white font-sans text-2xl font-medium"> Nguliah.id </h3>
+                            <p class="text-thirdText font-sans font-normal text-xl">Website</p>
+                        </div>
+                    </div>
+
+                    <!-- Portofolio 3 -->
+                    <div class="flex flex-col h-max bg-card bg-opacity-30 rounded-xl overflow-hidden">
+                        <div class="h-max">
+                            <img src="../src/img/Portofolio/nguliah.png" class="object-cover"  alt="">
+                        </div>
+                        <div class="flex flex-col gap-2 h-[114px] p-5 justify-center">
+                            <h3 class="text-white font-sans text-2xl font-medium"> Nguliah.id </h3>
+                            <p class="text-thirdText font-sans font-normal text-xl">Website</p>
+                        </div>
+                    </div>
+
+                    <!-- Portofolio 4 -->
+                    <div class="flex flex-col h-max bg-card bg-opacity-30 rounded-xl overflow-hidden">
+                        <div class="h-max">
+                            <img src="../src/img/Portofolio/nguliah.png" class="object-cover"  alt="">
+                        </div>
+                        <div class="flex flex-col gap-2 h-[114px] p-5 justify-center">
+                            <h3 class="text-white font-sans text-2xl font-medium"> Nguliah.id </h3>
+                            <p class="text-thirdText font-sans font-normal text-xl">Website</p>
+                        </div>
+                    </div>
+
+                    <!-- Portofolio 5 -->
+                    <div class="flex flex-col h-max bg-card bg-opacity-30 rounded-xl overflow-hidden">
+                        <div class="h-max">
+                            <img src="../src/img/Portofolio/nguliah.png" class="object-cover"  alt="">
+                        </div>
+                        <div class="flex flex-col gap-2 h-[114px] p-5 justify-center">
+                            <h3 class="text-white font-sans text-2xl font-medium"> Nguliah.id </h3>
+                            <p class="text-thirdText font-sans font-normal text-xl">Website</p>
+                        </div>
+                    </div>
+
+                    <!-- Portofolio 6 -->
+                    <div class="flex flex-col h-max bg-card bg-opacity-30 rounded-xl overflow-hidden">
+                        <div class="h-max">
+                            <img src="../src/img/Portofolio/nguliah.png" class="object-cover"  alt="">
+                        </div>
+                        <div class="flex flex-col gap-2 h-[114px] p-5 justify-center">
+                            <h3 class="text-white font-sans text-2xl font-medium"> Nguliah.id </h3>
+                            <p class="text-thirdText font-sans font-normal text-xl">Website</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
 

@@ -13,6 +13,7 @@ module.exports = {
                 secondaryText: "#E5E5E5",
                 thirdText: "#868490",
                 addtional: "#F8E7A1",
+                card: "#101B2E",
             },
         },
     },
