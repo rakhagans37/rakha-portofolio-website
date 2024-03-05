@@ -1,5 +1,5 @@
-import { CountUp } from "countup.js";
-import { Odometer } from "odometer.js";
+import { CountUp } from "/node_modules/countup.js/dist/countUp.min.js";
+import { Odometer } from "/node_modules/odometer_countup/dist/odometer.min.js";
 
 window.onload = function () {
     try {
