@@ -1,12 +1,14 @@
+import CountUp from "countup.js";
+
 window.onload = function () {
     try {
-        var countUpEv = new countUp.CountUp("event", 3, {
+        var countUpEv = new CountUp("event", 3, {
             suffix: "+",
         });
-        var countUpEx = new countUp.CountUp("experience", 2, {
+        var countUpEx = new CountUp("experience", 2, {
             suffix: "+",
         });
-        var countUpPro = new countUp.CountUp("project", 3, {
+        var countUpPro = new CountUp("project", 3, {
             suffix: "+",
         });
 
