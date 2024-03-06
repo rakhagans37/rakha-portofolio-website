@@ -1418,6 +1418,10 @@ input:checked + .toggle-bg {
   width: 16rem;
 }
 
+.w-\[450px\] {
+  width: 450px;
+}
+
 .w-\[this-is\\\\\] {
   width: this-is\\;
 }
@@ -1432,15 +1436,6 @@ input:checked + .toggle-bg {
 
 .w-full {
   width: 100%;
-}
-
-.w-fit {
-  width: -moz-fit-content;
-  width: fit-content;
-}
-
-.w-\[450px\] {
-  width: 450px;
 }
 
 .flex-1 {
@@ -3774,14 +3769,6 @@ input:checked + .toggle-bg {
 
   .lg\:w-\[450px\] {
     width: 450px;
-  }
-
-  .lg\:w-auto {
-    width: auto;
-  }
-
-  .lg\:w-\[500px\] {
-    width: 500px;
   }
 
   .lg\:w-max {
