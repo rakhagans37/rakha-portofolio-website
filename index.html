@@ -11,6 +11,9 @@
 
         <!-- Countup js -->
         <script src="./node_modules/countup.js/dist/countUp.umd.js"></script>
+
+        <!-- Flowbite -->
+        <script src="./node_modules/flowbite/dist/flowbite.min.js"></script>
     </head>
     <body class="bg-background font-sans">
         <!-- Blue Blur Image -->
@@ -31,35 +34,53 @@
 
 
         <!-- Navbar -->
-        <nav
-            class="px-32 pt-10 flex flex-row justify-between items-center w-full relative top-0"
-        >
-            <h1 class="text-secondaryText font-bold text-3xl">RAKHA</h1>
-
-            <ul class="text-white flex flex-row gap-10 text-lg font-medium">
-                <li>Services</li>
-                <li>Portofolio</li>
-                <li>Contact</li>
-                <li>About</li>
-            </ul>
+        <nav class="px-32 pt-10 w-full relative top-0">
+            <div class="w-full flex flex-wrap items-center justify-between mx-auto">
+                <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
+                    <span class="self-center text-3xl font-bold whitespace-nowrap text-secondaryText">Rakha</span>
+                </a>
+                <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center w-10 h-10 justify-center text-sm rounded-lg md:hidden focus:outline-none focus:ring-2 text-gray-400 hover:bg-gray-700 focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false">
+                    <span class="sr-only">Open main menu</span>
+                    <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+                    </svg>
+                </button>
+                <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+                    <ul class="font-medium text-lg p-4 flex flex-col md:p-0 mt-4 border rounded-lg bg-navbarBackground md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-transparent dark:bg-gray-800 md:dark:bg-gray-900 border-gray-700">
+                        <li>
+                            <a href="#" class="block py-2 px-3 text-secondaryText rounded md:hover:bg-transparent md:border-0  md:p-0 md:hover:text-blue-500 hover:bg-gray-700">About</a>
+                        </li>
+                        <li>
+                            <a href="#" class="block py-2 px-3 text-secondaryText rounded md:hover:bg-transparent md:border-0  md:p-0 md:hover:text-blue-500 hover:bg-gray-700">Tech Stack</a>
+                        </li>
+                        <li>
+                            <a href="#" class="block py-2 px-3 text-secondaryText rounded md:hover:bg-transparent md:border-0  md:p-0 md:hover:text-blue-500 hover:bg-gray-700">Portfolio</a>
+                        </li>
+                        <li>
+                            <a href="#" class="block py-2 px-3 text-secondaryText rounded md:hover:bg-transparent md:border-0  md:p-0 md:hover:text-blue-500 hover:bg-gray-700">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
+  
 
         <!-- About Me -->
         <div
-            class="mt-24 px-32 pt-10 w-full flex flex-row justify-between items-center relative"
+            class="mt-24 px-32 pt-10 w-full flex flex-col gap-20 lg:flex-row lg:gap-0 justify-between items-center relative"
         >
             <!-- Information Detail -->
-            <div class="flex flex-col gap-9 w-1/2 relative z-10">
-                <div class="flex flex-col gap-3">
+            <div class="flex flex-col gap-9 lg:w-1/2 relative z-10">
+                <div class="flex flex-col gap-3 w-full">
                     <h2 class="text-thirdText font-semibold text-3xl">
                         Full-Stack Developer
                     </h2>
-                    <h3 class="text-white font-semibold text-7xl top-1">
+                    <h3 class="text-white font-semibold text-7xl">
                         Muhammad Rakha Nasjaya
                     </h3>
                 </div>
-                <div class="w-[183px] h-2 bg-addtional"></div>
-                <div class="flex flex-col w-3/5 gap-14">
+                <div class="w-full lg:w-[183px] h-2 bg-addtional"></div>
+                <div class="flex flex-col lg:w-3/5 gap-14">
                     <p class="text-thirdText break-words text-justify text-xl">
                         I am a Full-Stack Developer with a passion for creating
                         beautiful and functional websites. I have a strong
@@ -73,50 +94,53 @@
                 </div>
             </div>
 
-            <!-- Profile Photo -->
-            <div
-                class="w-[450px] relative right-36 2xl:w-[500px] 2xl:right-48 2xl:mt-0"
-            >
-                <img src="src/img/Profile.webp" alt="Profile Photo"/>
-            </div>
+            <div class="w-full lg:w-auto flex flex-col md:flex-row gap-6 lg:gap-0 md:justify-between justify-center">
+                <!-- Profile Photo -->
+                <div
+                class="lg:w-[450px] lg:relative lg:right-36 2xl:w-[500px] 2xl:right-48 2xl:mt-0"
+                >
+                    <img src="src/img/Profile.webp" alt="Profile Photo"/>
+                </div>
 
-            <!-- Experience -->
-            <div class="flex flex-col gap-28">
-                <div class="w-max flex flex-col gap-3">
-                    <h2 class="text-thirdText text-2xl">Years of Exprience</h2>
-                    <p
-                        class="text-white text-white text-7xl font-semibold"
-                        id="experience"
-                    ></p>
-                </div>
-                <div class="flex flex-col gap-3">
-                    <h2 class="text-thirdText text-2xl">Complete Project</h2>
-                    <p
-                        class="text-white text-white text-7xl font-semibold"
-                        id="project"
-                    ></p>
-                </div>
-                <div class="flex flex-col gap-3">
-                    <h2 class="text-thirdText text-2xl">Event Orginizer</h2>
-                    <p class="text-white text-7xl font-semibold" id="event"></p>
+                <!-- Experience -->
+                <div class="flex md:flex-col gap-28">
+                    <div class="flex flex-col gap-3">
+                        <h2 class="text-thirdText text-sm md:text-2xl">Years of Exprience</h2>
+                        <p
+                            class="text-white text-3xl md:text-7xl font-semibold"
+                            id="experience"
+                        ></p>
+                    </div>
+                    <div class="flex flex-col gap-3">
+                        <h2 class="text-thirdText text-sm md:text-2xl">Complete Project</h2>
+                        <p
+                            class="text-white text-3xl md:text-7xl font-semibold"
+                            id="project"
+                        ></p>
+                    </div>
+                    <div class="flex flex-col gap-3">
+                        <h2 class="text-thirdText text-sm md:text-2xl">Event Orginizer</h2>
+                        <p class="text-white text-3xl md:text-7xl font-semibold" id="event"></p>
+                    </div>
                 </div>
             </div>
+            
         </div>
 
         
 
         <!-- Stack -->
         <div
-            class="bg-backgroundSecondary bg-opacity-60 mt-28 2xl:mt-44 h-[200px] flex items-center justify-center relative"
+            class="bg-backgroundSecondary bg-opacity-60 mt-28 2xl:mt-44 h-max flex items-center justify-center relative"
         >
             <ul
-                class="grid grid-cols-6 gap-[115px] 2xl:gap-[200px] px-[150px] items-center justify-center"
+                class="grid grid-cols-2 sm:grid-cols-3 gap-20 py-20 px-20 lg:grid-cols-6 lg:gap-28 xl:gap-36 2xl:gap-[200px] lg:px-[120px] lg:py-12 items-center"
             >   
                 <li>
                     <a href="#">
                         <img
                             src="src/img/laravel-wordmark-1.svg"
-                            class="grayscale hover:grayscale-0 transition-all duration-300 ease-in-out"
+                            class="grayscale hover:grayscale-0 transition-all duration-300 ease-in-out lg:max-w-20  2xl:min-w-30 2xl:max-w-34"
                             alt="Laravel"
                             title="Laravel"
                         />
@@ -127,7 +151,7 @@
                     <a href="#">
                         <img
                             src="src/img/tailwindcss.svg"
-                            class="grayscale hover:grayscale-0 transition-all duration-300 ease-in-out"
+                            class="grayscale hover:grayscale-0 transition-all duration-300 ease-in-out lg:max-w-20  2xl:min-w-30 2xl:max-w-34"
                             alt="Tailwind CSS"
                             title="Tailwind CSS"
                         />
@@ -139,7 +163,7 @@
                         <img
                             src="src/img/bootstrap-5.svg"
                             alt="nguliah.id poster"
-                            class="grayscale hover:grayscale-0 transition-all duration-300 ease-in-out"
+                            class="grayscale hover:grayscale-0 transition-all duration-300 ease-in-out lg:max-w-20  2xl:min-w-30 2xl:max-w-34"
                             title="Bootstrap 5"
                         />
                     </a>
@@ -150,7 +174,7 @@
                         <img
                             src="src/img/mysql-logo.svg"
                             alt="MySQL"
-                            class="grayscale hover:grayscale-0 transition-all duration-300 ease-in-out"
+                            class="grayscale hover:grayscale-0 transition-all duration-300 ease-in-out lg:max-w-20  2xl:min-w-30 2xl:max-w-34"
                             title="MySQL"
                         />
                     </a>
@@ -161,7 +185,7 @@
                         <img
                             src="src/img/react-2.svg"
                             alt="React JS"
-                            class="grayscale hover:grayscale-0 transition-all duration-30 ease-in-out"
+                            class="grayscale hover:grayscale-0 transition-all duration-30 ease-in-out lg:max-w-20  2xl:min-w-30 2xl:max-w-34"
                             title="React JS"
                         />
                     </a href="#">
@@ -172,7 +196,7 @@
                         <img
                             src="src/img/github-icon-1.svg"
                             alt="GitHub"
-                            class="grayscale hover:grayscale-0 transition-all duration-300 ease-in-out"
+                            class="grayscale hover:grayscale-0 transition-all duration-300 ease-in-out lg:max-w-20  2xl:min-w-30 2xl:max-w-34"
                             title="GitHub"
                         />
                     </a>
@@ -184,26 +208,26 @@
         <div
             class="mt-36 mx-32 bg-backgroundSecondary bg-opacity-60 overflow-hidden rounded-lg relative"
         >
-            <div class="flex flex-col justify-between px-10 py-10">
+            <div class="flex flex-col justify-between px-5 py-5 md:px-10 md:py-10">
                 <!-- Intro Portofolio -->
                 <div class="flex flex-row justify-between items-center">
-                    <h2 class="text-white font-sans text-6xl font-semibold">
+                    <h2 class="text-white text-2xl font-sans md:text-4xl lg:text-6xl font-semibold">
                         My Portofolio
                     </h2>
-                    <a href="#" class="text-addtional text-xl font-normal"
+                    <a href="#" class="text-addtional text-sm md:text-lg lg:text-xl font-normal"
                         >See All -></a
                     >
                 </div>
 
                 <!-- Detail Portofolio -->
-                <div class="grid grid-cols-3 mt-8 gap-5 gap-y-10">
+                <div class="grid mt-8 gap-5 gap-y-10 lg:grid-cols-3 md:grid-cols-2 grid-cols-1">
                     <!-- Portofolio 1 -->
                     <div class="flex flex-col bg-card bg-opacity-30 rounded-xl overflow-hidden">
                         <div class="h-full w-full">
                             <img src="src/img/Portofolio/nguliah.webp" class="object-cover h-full w-full"  alt="nguliah.id poster">
                         </div>
                         <div class="flex flex-col gap-2 h-[114px] p-5 justify-center">
-                            <h3 class="text-white font-sans text-2xl font-medium"> Nguliah.id </h3>
+                            <h3 class="text-white font-sans text-2xl font-medium">Nguliah.id</h3>
                             <p class="text-thirdText font-sans font-normal text-xl">Website</p>
                         </div>
                     </div>

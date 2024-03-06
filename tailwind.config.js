@@ -1,12 +1,13 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-    content: ["./**/*.{html,js}"],
+    content: ["./**/*.{html,js}", "./node_modules/flowbite/**/*.js"],
     theme: {
         extend: {
             fontFamily: {
                 sans: ["Poppins"],
             },
             colors: {
+                navbarBackground: "#030E21",
                 background: "#030E21",
                 backgroundSecondary: "#091427",
                 primaryText: "#FFFFF",
@@ -17,5 +18,5 @@ module.exports = {
             },
         },
     },
-    plugins: [],
+    plugins: [require("flowbite/plugin")],
 };
